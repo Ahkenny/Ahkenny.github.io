@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>fashionista</title>
+    <link type="text/css" rel="stylesheet" href="fashionista.css" />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Georama:wght@200;300;400;600&family=Sofia+Sans:ital,wght@0,700;0,800;0,900;1,900&display=swap");
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <a href="#" class="toggle-button">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </a>
+        <div class="nav-links">
+          <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="About.html">About</a></li>
+            <li><a href="#">Shop</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <div class="cont">
+        <h1>
+          Explore Amazing <br />Fashionable Blazers <br />this Season. <br />
+        </h1>
+      </div>
+      <div class="button">
+        <button><a href="shop.html">Shop Now</a></button>
+      </div>
+    </main>
+    <script>
+      const toggleButton = document.getElementsByClassName("toggle-button")[0];
+      const navLinks = document.getElementsByClassName("nav-links")[0];
+
+      toggleButton.addEventListener("click", () => {
+        navLinks.classList.toggle("active");
+      });
+    </script>
+  </body>
+</html>
